@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>sfg-web | Lab Notebook</title>
+        <link>https://web.sfg.quest</link>
+        <description>Koray's public lab notes on embedded systems, Linux, and hardware.</description>
+        <lastBuildDate>Mon, 22 Dec 2025 10:16:26 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <image>
+            <title>sfg-web | Lab Notebook</title>
+            <url>https://web.sfg.quest/images/og-image.png</url>
+            <link>https://web.sfg.quest</link>
+        </image>
+        <copyright>All rights reserved 2025, Koray Bilir</copyright>
+        <item>
+            <title><![CDATA[A clean slate.]]></title>
+            <link>https://web.sfg.quest/posts/2025-12-22</link>
+            <guid isPermaLink="false">https://web.sfg.quest/posts/2025-12-22</guid>
+            <pubDate>Sun, 21 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Moving from a static portfolio to a living lab notebook. Why the old site had to go.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to <strong>sfg-web</strong>.</p>
+<p>If you knew me before, you might remember my old site. It was clean, it was basically a digital resume.</p>
+<h2>My problem</h2>
+<p>It was <em>too</em> static. </p>
+<p>I listed projects there out of obligation, but I found that I felt like a project needed to be <strong>finished</strong> or <strong>perfected</strong> before I could even think about putting it on the site.</p>
+<p>That meant a lot of the stuff I coded or built never saw the light of day. And because I wasn&#39;t publishing anything, I kept jumping from project to project without ever wrapping things up.</p>
+<h2>The Fix</h2>
+<p>It started when I began keeping notes in <strong>Obsidian</strong>. I went &quot;wow, markdown is actually really cool&quot; and I got the urge to document my &#39;experiences&#39; properly. </p>
+<p>This site is the result of that idea. I just drop a Markdown file in a folder, and it turns into a web page. A clean, distraction free wall of text and sometimes images.</p>
+<p>Whether it&#39;s a full project or just some boring coding stuff, the goal is to be more responsible. I expect that by forcing myself to document the process, I&#39;ll actually stay on track and finish more builds.</p>
+<p>There is so much stuff I’ve never shared with the world, abandoned prototypes, niche scripts, and hardware hacks that would make people squirm.</p>
+<p>And hey, if a post here helps someone else fix a really specific bug down the line? Hell yeah.</p>
+]]></content:encoded>
+            <enclosure url="https://web.sfg.quest/images/2025-12-22/thumbnail.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>

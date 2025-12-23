@@ -43,7 +43,7 @@ export default async function TagPage({
         {posts.map((post) => (
           <li
             key={post.slug}
-            className="group relative flex flex-col md:flex-row gap-6 border-b border-border-subtle pb-8 last:border-0"
+            className="group relative flex flex-col md:flex-row items-center gap-6 border-b border-border-subtle pb-8 last:border-0"
           >
             {post.thumbnail && (
               <div className="w-full md:w-48 h-32 shrink-0 overflow-hidden rounded-lg border border-border-subtle bg-surface relative">
@@ -55,34 +55,30 @@ export default async function TagPage({
                 />
               </div>
             )}
-
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-xs font-mono text-muted">
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap items-center gap-2 mb-2 relative z-10">
+                <span className="text-xs font-mono text-muted shrink-0 mr-1">
                   {post.date}
                 </span>
 
-                <div className="flex gap-2 relative z-10">
-                  {post.tags?.map((t: string) => (
-                    <Link
-                      key={t}
-                      href={`/tags/${t.toLowerCase()}`}
-                      className={`
-                        text-[10px] uppercase tracking-widest border px-2 py-0.5 rounded transition-colors font-mono
-                        ${
-                          t.toLowerCase() === tag.toLowerCase()
-                            ? "border-blue-500 text-blue-500 bg-blue-500/10" // Highlight current tag
-                            : "border-border-subtle text-muted hover:border-blue-400 hover:text-blue-400"
-                        }
-                      `}
-                    >
-                      #{t}
-                    </Link>
-                  ))}
-                </div>
+                {post.tags?.map((t: string) => (
+                  <Link
+                    key={t}
+                    href={`/tags/${t.toLowerCase()}`}
+                    className={`
+                      text-[10px] uppercase tracking-widest border px-2 py-0.5 rounded transition-colors font-mono whitespace-nowrap
+                      ${
+                        t.toLowerCase() === tag.toLowerCase()
+                          ? "border-blue-500 text-blue-500 bg-blue-500/10" // Highlight current tag
+                          : "border-border-subtle text-muted hover:border-blue-400 hover:text-blue-400"
+                      }
+                    `}
+                  >
+                    #{t}
+                  </Link>
+                ))}
               </div>
-
-              <h3 className="text-xl font-bold text-foreground group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-foreground group-hover:text-blue-400 transition-colors wrap-break-word">
                 <Link href={`/posts/${post.slug}`}>
                   <span className="absolute inset-0" aria-hidden="true" />
                   {post.title}

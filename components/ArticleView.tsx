@@ -62,25 +62,22 @@ export default function ArticleView({ postData }: ArticleViewProps) {
             />
           </div>
         )}
-
-        <h1 className="text-4xl font-black mt-1 leading-tight text-foreground">
+        <h1 className="text-4xl font-black mt-1 leading-tight text-foreground wrap-break-word">
           {postData.title}
         </h1>
-
-        <div className="flex items-center gap-4 mt-2 text-muted font-mono text-sm">
-          <span>{postData.date}</span>
-          <span className="text-border-subtle">|</span>
-          <div className="flex gap-2 relative z-10">
-            {postData.tags?.map((tag: string) => (
-              <Link
-                key={tag}
-                href={`/tags/${tag.toLowerCase()}`}
-                className="hover:text-blue-600 transition-colors"
-              >
-                #{tag}
-              </Link>
-            ))}
-          </div>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-2 mt-2 text-muted font-mono text-sm relative z-10">
+          <span className="shrink-0">{postData.date}</span>
+          <span className="text-border-subtle shrink-0 mx-2">|</span>
+          
+          {postData.tags?.map((tag: string) => (
+            <Link
+              key={tag}
+              href={`/tags/${tag.toLowerCase()}`}
+              className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            >
+              #{tag}
+            </Link>
+          ))}
         </div>
       </header>
 

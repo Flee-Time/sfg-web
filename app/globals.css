@@ -80,15 +80,9 @@
   margin-bottom: 0.75rem !important;
 }
 
-.prose pre {
-  font-family: var(--font-geist-mono) !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  border-radius: 0.5rem;
-  
-  background-color: var(--code-bg) !important;
-  border: 1px solid var(--code-border) !important;
-  color: var(--foreground) !important;
+.prose img {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
 .prose p {
@@ -102,16 +96,6 @@
   margin-bottom: 1.5rem !important;
   border-color: var(--border) !important;
   opacity: 0.5;
-}
-
-.prose :not(pre) > code {
-  background-color: var(--surface) !important;
-  color: var(--foreground) !important;
-  border: 1px solid var(--border);
-  padding: 0.15rem 0.3rem;
-  border-radius: 0.25rem;
-  font-size: 0.875em;
-  font-family: var(--font-geist-mono);
 }
 
 .prose h1, .prose h2, .prose h3 {
@@ -142,6 +126,7 @@ code[data-theme*=" "] span {
 
   background-color: var(--shiki-light-bg, var(--surface)) !important;
   border: 1px solid var(--border) !important;
+  color: var(--foreground) !important;
 
   overflow-x: auto;
 }

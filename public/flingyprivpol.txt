@@ -1,0 +1,12 @@
+Privacy Policy for Flingy
+
+1. Information Collection and Use
+Koray Bilir built Flingy as a Free app. This SERVICE is provided by Koray Bilir at no cost and is intended for use as is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information.
+2. Third-Party Services
+The app does use third-party services that may collect information used to identify you. Specifically, this app utilizes Google Play Games Services. By using this service, your Gamer ID, achievements, and scores may be accessed and stored by Google to provide game functionality (Cloud Saves/Leaderboards).
+	Link to the privacy policy of third-party service providers used by the app: https://policies.google.com/privacy
+3. Data Storage
+I do not personally store or access your private data on any external servers. Any game data (like progress) is handled through the Google Play Games API.
+4. Contact Us
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at info@sfg.quest
+Last Updated: 16/01/2026
